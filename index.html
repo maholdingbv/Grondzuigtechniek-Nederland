@@ -127,11 +127,13 @@
             min-width: 300px;
         }
 
-        .brand-mark {
-            width: 48px;
-            height: 48px;
-            position: relative;
-        }
+      .brand-mark {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
 
         .brand-name {
             line-height: 1;
@@ -1043,24 +1045,10 @@
 
         <a href="#" class="brand">
 
-            <svg class="brand-mark"
-                 viewBox="0 0 100 100"
-                 xmlns="http://www.w3.org/2000/svg"
-                 aria-label="Grondzuigtechniek Nederland logo">
-
-                <path
-                    d="M25 10 H78 L90 22 V36 H43 L32 47 V67 L47 80 H67 V62 H52 L42 52 H88 V85 L74 96 H39 L12 73 V31 Z"
-                    fill="#FFFFFF"/>
-
-                <path
-                    d="M10 74 L34 95 H22 L5 82 Z"
-                    fill="#C7E500"/>
-
-                <path
-                    d="M6 86 L18 97 H8 L2 91 Z"
-                    fill="#C7E500"/>
-
-            </svg>
+            <img
+    src="assets/logoG.png"
+    class="brand-mark"
+    alt="Grondzuigtechniek Nederland">
 
             <span class="brand-name">
                 <span class="brand-name-main">Grondzuigtechniek</span>
