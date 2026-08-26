@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grondzuigtechniek Nederland | Grondopzuigen.nl</title>
+
+    <meta name="description"
+          content="Professionele grondzuigwerkzaamheden voor infra, bouw en industrie. Kabels en leidingen gecontroleerd vrijzuigen. Landelijk inzetbaar vanuit regio Rotterdam.">
+
+    <style>
+
+        /* =========================================================
+           GRONDZUIGTECHNIEK NEDERLAND
+           BASIS HUISSTIJL
+        ========================================================= */
+
+        :root {
+            --carbon: #171A1D;
+            --carbon-dark: #0D0F11;
+            --lime: #C7E500;
+            --lime-dark: #AAC300;
+            --white: #FFFFFF;
+            --concrete: #E8E6E1;
+            --light: #F5F5F2;
+            --steel: #596166;
+            --text: #222629;
+            --border: #D5D6D2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Aptos, Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.55;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1180px, calc(100% - 48px));
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--lime-dark);
+            margin-bottom: 12px;
+        }
+
+        h1, h2, h3 {
+            font-family: "Aptos Display", Aptos, Arial, sans-serif;
+            line-height: 1.05;
+            font-weight: 800;
+        }
+
+        h1 {
+            font-size: clamp(48px, 7vw, 92px);
+            letter-spacing: -3px;
+        }
+
+        h2 {
+            font-size: clamp(34px, 4vw, 56px);
+            letter-spacing: -1.5px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        header {
+            height: 84px;
+            background: var(--carbon);
+            color: white;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            min-width: 300px;
+        }
+
+        .brand-mark {
+            width: 48px;
+            height: 48px;
+            position: relative;
+        }
+
+        .brand-name {
+            line-height: 1;
+            font-family: "Aptos Display", Aptos, Arial, sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .brand-name-main {
+            display: block;
+            font-size: 18px;
+            letter-spacing: -.3px;
+        }
+
+        .brand-name-sub {
+            display: block;
+            color: var(--lime);
+            font-size: 18px;
+            margin-top: 3px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        nav a {
+            opacity: .85;
+            transition: .2s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+            color: var(--lime);
+        }
+
+        .header-cta {
+            background: var(--lime);
+            color: var(--carbon);
+            padding: 13px 19px;
+            font-weight: 800;
+        }
+
+        .header-cta:hover {
+            color: var(--carbon);
+            background: white;
+        }
+
+        .menu-button {
+            display: none;
+            border: 0;
+            background: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(13,15,17,.97) 0%,
+                    rgba(13,15,17,.92) 32%,
+                    rgba(13,15,17,.74) 52%,
+                    rgba(13,15,17,.32) 76%,
+                    rgba(13,15,17,.12) 100%
+                ),
+                url("9.JPG");
+
+            background-size: cover;
+            background-position: center center;
+
+            min-height: 690px;
+            color: white;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            width: 600px;
+            height: 600px;
+            border: 120px solid rgba(199,229,0,.035);
+            position: absolute;
+            right: -130px;
+            top: 70px;
+            transform: rotate(15deg);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            align-items: center;
+            min-height: 690px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            max-width: 780px;
+            padding: 80px 0;
+        }
+
+        .hero .eyebrow {
+            color: var(--lime);
+        }
+
+        .hero h1 span {
+            color: var(--lime);
+            display: block;
+        }
+
+        .hero-text {
+            font-size: 21px;
+            max-width: 680px;
+            margin-top: 25px;
+            color: rgba(255,255,255,.84);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 14px;
+            margin-top: 36px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 0 24px;
+            font-weight: 800;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .btn-primary {
+            background: var(--lime);
+            color: var(--carbon);
+        }
+
+        .btn-primary:hover {
+            background: white;
+        }
+
+        .btn-outline {
+            border-color: rgba(255,255,255,.4);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            border-color: white;
+            background: rgba(255,255,255,.08);
+        }
+
+        .hero-stat-box {
+            justify-self: end;
+            width: 320px;
+            background: rgba(23,26,29,.88);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255,255,255,.12);
+            border-left: 4px solid var(--lime);
+            padding: 28px;
+        }
+
+        .hero-stat-box strong {
+            color: var(--lime);
+            display: block;
+            font-size: 38px;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .hero-stat {
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+        }
+
+        .hero-stat:last-child {
+            border-bottom: 0;
+        }
+
+        .hero-stat small {
+            color: rgba(255,255,255,.66);
+        }
+
+
+        /* =========================================================
+           PRAKTIJK BAR
+        ========================================================= */
+
+        .usp-bar {
+            background: var(--lime);
+        }
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .usp {
+            padding: 27px 35px;
+            border-right: 1px solid rgba(23,26,29,.25);
+        }
+
+        .usp:last-child {
+            border-right: 0;
+        }
+
+        .usp strong {
+            font-size: 19px;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .usp span {
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           GENERAL SECTIONS
+        ========================================================= */
+
+        section {
+            padding: 100px 0;
+        }
+
+
+        /* =========================================================
+           INTRO
+        ========================================================= */
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 90px;
+            align-items: start;
+        }
+
+        .intro-copy p {
+            margin-bottom: 18px;
+            color: #4C5256;
+        }
+
+        .big-statement {
+            margin-top: 25px;
+            padding-left: 22px;
+            border-left: 5px solid var(--lime);
+            font-size: 24px !important;
+            font-weight: 700;
+            color: var(--carbon) !important;
+        }
+
+
+        /* =========================================================
+           SERVICES
+        ========================================================= */
+
+        .services {
+            background: var(--light);
+        }
+
+        .section-heading {
+            max-width: 760px;
+            margin-bottom: 50px;
+        }
+
+        .section-heading p {
+            margin-top: 17px;
+            color: var(--steel);
+        }
+
+        .service-feature {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            background: var(--carbon);
+            margin-bottom: 22px;
+            min-height: 480px;
+            overflow: hidden;
+        }
+
+        .service-feature-image {
+            min-height: 480px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .service-feature-copy {
+            padding: 55px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-feature-copy .eyebrow {
+            color: var(--lime);
+        }
+
+        .service-feature-copy h3 {
+            font-size: clamp(30px, 3vw, 44px);
+            margin-bottom: 20px;
+        }
+
+        .service-feature-copy p {
+            color: rgba(255,255,255,.72);
+            max-width: 480px;
+        }
+
+        .feature-detail {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,.15);
+            font-size: 15px;
+            color: rgba(255,255,255,.65);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 35px 30px;
+            min-height: 265px;
+            position: relative;
+            transition: .2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--lime-dark);
+        }
+
+        .card-number {
+            color: var(--lime-dark);
+            font-weight: 800;
+            font-family: monospace;
+            font-size: 13px;
+            margin-bottom: 35px;
+        }
+
+        .card h3 {
+            margin-bottom: 13px;
+        }
+
+        .card p {
+            color: var(--steel);
+            font-size: 15px;
+        }
+
+        .card::after {
+            content: "";
+            width: 36px;
+            height: 5px;
+            background: var(--lime);
+            position: absolute;
+            left: 30px;
+            bottom: 28px;
+        }
+
+
+        /* =========================================================
+           DARK VALUE SECTION
+        ========================================================= */
+
+        .value {
+            background: var(--carbon);
+            color: white;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .value h2 span {
+            color: var(--lime);
+        }
+
+        .value-copy > p {
+            color: rgba(255,255,255,.72);
+            margin-top: 22px;
+            max-width: 600px;
+        }
+
+        .value-list {
+            margin-top: 35px;
+        }
+
+        .value-item {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            gap: 20px;
+            padding: 23px 0;
+            border-top: 1px solid rgba(255,255,255,.12);
+        }
+
+        .value-number {
+            color: var(--lime);
+            font-family: monospace;
+            font-size: 15px;
+            padding-top: 5px;
+        }
+
+        .value-item p {
+            color: rgba(255,255,255,.65);
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        .quote-panel {
+            background: var(--lime);
+            color: var(--carbon);
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-panel::before {
+            content: "G";
+            position: absolute;
+            font-family: Arial Black, Arial;
+            font-size: 380px;
+            font-weight: 900;
+            line-height: .7;
+            color: rgba(23,26,29,.07);
+            right: -25px;
+            top: 45px;
+        }
+
+        .quote-panel blockquote {
+            font-size: 33px;
+            font-weight: 800;
+            line-height: 1.15;
+            position: relative;
+            z-index: 2;
+        }
+
+
+        /* =========================================================
+           PARTNERS
+        ========================================================= */
+
+        .partner-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 560px;
+            margin-bottom: 25px;
+            background: var(--light);
+        }
+
+        .partner-main-image {
+            min-height: 560px;
+            overflow: hidden;
+        }
+
+        .partner-main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .partner-main-copy {
+            padding: 65px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .partner-main-copy h3 {
+            font-size: clamp(34px, 4vw, 52px);
+            margin-bottom: 22px;
+            max-width: 520px;
+        }
+
+        .partner-main-copy p {
+            color: var(--steel);
+            max-width: 520px;
+        }
+
+        .partner-main-copy .link {
+            display: inline-block;
+            align-self: flex-start;
+            margin-top: 28px;
+            font-weight: 800;
+            border-bottom: 3px solid var(--lime);
+            padding-bottom: 3px;
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .partner-card {
+            border-top: 5px solid var(--lime);
+            background: var(--carbon);
+            color: white;
+            padding: 45px;
+        }
+
+        .partner-card h3 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .partner-card p {
+            color: rgba(255,255,255,.7);
+            max-width: 720px;
+        }
+
+        .partner-card .link {
+            display: inline-block;
+            margin-top: 25px;
+            font-weight: 800;
+            border-bottom: 3px solid var(--lime);
+            padding-bottom: 3px;
+        }
+
+
+        /* =========================================================
+           PROCESS
+        ========================================================= */
+
+        .process {
+            background: var(--concrete);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 50px;
+        }
+
+        .step {
+            padding: 28px 30px 28px 0;
+            border-top: 3px solid var(--carbon);
+            margin-right: 25px;
+        }
+
+        .step-number {
+            color: var(--lime-dark);
+            font-family: monospace;
+            font-weight: 800;
+            margin-bottom: 23px;
+        }
+
+        .step h3 {
+            font-size: 21px;
+            margin-bottom: 9px;
+        }
+
+        .step p {
+            color: var(--steel);
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           CTA / CONTACT
+        ========================================================= */
+
+        .contact {
+            padding: 0;
+            background: var(--carbon-dark);
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            min-height: 500px;
+        }
+
+        .contact-main {
+            padding: 85px max(48px, calc((100vw - 1180px) / 2));
+            padding-right: 70px;
+        }
+
+        .contact-main h2 {
+            max-width: 620px;
+        }
+
+        .contact-main h2 span {
+            color: var(--lime);
+        }
+
+        .contact-main p {
+            color: rgba(255,255,255,.68);
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+        .contact-details {
+            background: var(--lime);
+            color: var(--carbon);
+            padding: 85px 65px;
+        }
+
+        .contact-details h3 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .contact-row {
+            padding: 17px 0;
+            border-top: 1px solid rgba(23,26,29,.2);
+        }
+
+        .contact-row small {
+            display: block;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            opacity: .65;
+            margin-bottom: 3px;
+        }
+
+        .contact-row strong {
+            font-size: 19px;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: #090B0C;
+            color: rgba(255,255,255,.58);
+            padding: 28px 0;
+            font-size: 13px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 960px) {
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 84px;
+                left: 0;
+                right: 0;
+                background: var(--carbon);
+                padding: 25px;
+                flex-direction: column;
+                align-items: stretch;
+                border-top: 1px solid rgba(255,255,255,.1);
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .hero {
+                background-position: 62% center;
+            }
+
+            .hero-grid,
+            .intro-grid,
+            .value-grid,
+            .service-feature,
+            .partner-main,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-grid {
+                min-height: auto;
+            }
+
+            .hero-stat-box {
+                justify-self: start;
+                width: 100%;
+                margin-bottom: 60px;
+            }
+
+            .service-feature-image {
+                min-height: 480px;
+            }
+
+            .service-feature-copy {
+                padding: 45px;
+            }
+
+            .partner-main-image {
+                min-height: 480px;
+            }
+
+            .partner-main-copy {
+                padding: 50px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-main {
+                padding: 70px 40px;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .container {
+                width: min(100% - 30px, 1180px);
+            }
+
+            header {
+                height: 72px;
+            }
+
+            .brand {
+                min-width: 0;
+            }
+
+            .brand-mark {
+                width: 40px;
+                height: 40px;
+            }
+
+            .brand-name-main,
+            .brand-name-sub {
+                font-size: 13px;
+            }
+
+            nav {
+                top: 72px;
+            }
+
+            h1 {
+                font-size: 49px;
+                letter-spacing: -2px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .hero {
+                background:
+                    linear-gradient(
+                        90deg,
+                        rgba(13,15,17,.96) 0%,
+                        rgba(13,15,17,.88) 55%,
+                        rgba(13,15,17,.58) 100%
+                    ),
+                    url("9.JPG");
+
+                background-size: cover;
+                background-position: 63% center;
+            }
+
+            .hero-content {
+                padding: 65px 0 40px;
+            }
+
+            .hero-text {
+                font-size: 18px;
+            }
+
+            .usp-grid,
+            .cards,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .usp {
+                border-right: 0;
+                border-bottom: 1px solid rgba(23,26,29,.2);
+            }
+
+            .intro-grid {
+                gap: 35px;
+            }
+
+            .service-feature {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            .service-feature-image {
+                min-height: 390px;
+            }
+
+            .service-feature-copy {
+                padding: 38px 30px;
+            }
+
+            .cards {
+                gap: 12px;
+            }
+
+            .quote-panel {
+                padding: 35px;
+                min-height: 330px;
+            }
+
+            .quote-panel blockquote {
+                font-size: 27px;
+            }
+
+            .partner-main {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            .partner-main-image {
+                min-height: 400px;
+            }
+
+            .partner-main-copy {
+                padding: 40px 30px;
+            }
+
+            .partner-card {
+                padding: 35px 30px;
+            }
+
+            .contact-details {
+                padding: 60px 30px;
+            }
+
+            .contact-main {
+                padding: 60px 30px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+    <div class="container header-inner">
+
+        <a href="#" class="brand">
+
+            <svg class="brand-mark"
+                 viewBox="0 0 100 100"
+                 xmlns="http://www.w3.org/2000/svg"
+                 aria-label="Grondzuigtechniek Nederland logo">
+
+                <path
+                    d="M25 10 H78 L90 22 V36 H43 L32 47 V67 L47 80 H67 V62 H52 L42 52 H88 V85 L74 96 H39 L12 73 V31 Z"
+                    fill="#FFFFFF"/>
+
+                <path
+                    d="M10 74 L34 95 H22 L5 82 Z"
+                    fill="#C7E500"/>
+
+                <path
+                    d="M6 86 L18 97 H8 L2 91 Z"
+                    fill="#C7E500"/>
+
+            </svg>
+
+            <span class="brand-name">
+                <span class="brand-name-main">Grondzuigtechniek</span>
+                <span class="brand-name-sub">Nederland</span>
+            </span>
+
+        </a>
+
+
+        <nav id="mainNav">
+
+            <a href="#diensten">Diensten</a>
+
+            <a href="#waarom">
+                Waarom grondzuigen
+            </a>
+
+            <a href="#partners">
+                Voor aannemers
+            </a>
+
+            <a href="#werkwijze">
+                Werkwijze
+            </a>
+
+            <a href="#contact"
+               class="header-cta">
+                Capaciteit nodig?
+            </a>
+
+        </nav>
+
+
+        <button class="menu-button"
+                aria-label="Menu openen"
+                onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Grondzuigtechniek • Infra • Bouw • Industrie
+            </div>
+
+            <h1>
+                GROND OPZUIGEN.
+                <span>RUIMTE OM DOOR TE WERKEN.</span>
+            </h1>
+
+            <p class="hero-text">
+                Kabels en leidingen vrijzuigen, tracés vrijmaken
+                en grond of los materiaal verwijderen waar
+                gecontroleerd werken nodig is.
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a href="#contact"
+                   class="btn btn-primary">
+                    Capaciteit nodig?
+                </a>
+
+                <a href="#diensten"
+                   class="btn btn-outline">
+                    Bekijk toepassingen
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-stat-box">
+
+            <div class="hero-stat">
+
+                <strong>NL</strong>
+
+                <span>
+                    Landelijk inzetbaar
+                </span>
+
+                <br>
+
+                <small>
+                    Vanuit regio Rotterdam
+                </small>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong>01</strong>
+
+                <span>
+                    Professionele grondzuigcapaciteit
+                </span>
+
+                <br>
+
+                <small>
+                    Voor infra, bouw en industrie
+                </small>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong>SNEL</strong>
+
+                <span>
+                    Schakelen wanneer capaciteit nodig is
+                </span>
+
+                <br>
+
+                <small>
+                    Voor projectwerk, piekbelasting en extra inzet
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRAKTIJK BAR
+========================================================= -->
+
+<div class="usp-bar">
+
+    <div class="container usp-grid">
+
+        <div class="usp">
+
+            <strong>
+                KABELS & LEIDINGEN
+            </strong>
+
+            <span>
+                Gecontroleerd vrijzuigen rondom bestaande infra.
+            </span>
+
+        </div>
+
+
+        <div class="usp">
+
+            <strong>
+                GROND & MATERIAAL
+            </strong>
+
+            <span>
+                Gericht verwijderen waar graven niet past.
+            </span>
+
+        </div>
+
+
+        <div class="usp">
+
+            <strong>
+                EXTRA CAPACITEIT
+            </strong>
+
+            <span>
+                Snel schakelen voor projectwerk en piekbelasting.
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section id="waarom">
+
+    <div class="container intro-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Grondzuigtechniek in de praktijk
+            </div>
+
+            <h2>
+                Vrijzuigen waar gecontroleerd werken nodig is.
+            </h2>
+
+        </div>
+
+
+        <div class="intro-copy">
+
+            <p>
+                Kabels, leidingen en andere ondergrondse infrastructuur
+                liggen op veel locaties dicht bij elkaar. Dan is
+                traditioneel mechanisch graven niet altijd de juiste aanpak.
+            </p>
+
+            <p>
+                Met grondzuigtechniek verwijderen we grond en los materiaal
+                gericht rondom bestaande infrastructuur, bij tracés,
+                putten, aansluitingen en andere locaties waar nauwkeurig
+                gewerkt moet worden.
+            </p>
+
+            <p>
+                Grondzuigtechniek Nederland levert grondzuigcapaciteit
+                voor aannemers, infrabedrijven, bouwbedrijven, industrie
+                en collega-grondzuigbedrijven.
+            </p>
+
+            <p class="big-statement">
+                Vrijzuigen. Ruimte maken. Volgende stap.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SERVICES / TOEPASSINGEN
+========================================================= -->
+
+<section class="services"
+         id="diensten">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Toepassingen
+            </div>
+
+            <h2>
+                Zuigkracht waar gecontroleerd werken telt.
+            </h2>
+
+            <p>
+                Voor ondergrondse infra, bouwprojecten en situaties
+                waarin grond of ander los materiaal gericht moet
+                worden verwijderd.
+            </p>
+
+        </div>
+
+
+        <!-- GROOT PRAKTIJKBEELD -->
+
+        <div class="service-feature">
+
+            <div class="service-feature-image">
+
+                <img
+                    src="WhatsApp Image 2026-08-20 at 14.43.43 (3).jpeg"
+                    alt="Grondzuigwerk rondom bestaande kabels en leidingen"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="service-feature-copy">
+
+                <div class="eyebrow">
+                    Rond bestaande infrastructuur
+                </div>
+
+                <h3>
+                    Gericht vrijzuigen waar ruimte beperkt is.
+                </h3>
+
+                <p>
+                    Grond en los materiaal verwijderen rondom kabels,
+                    leidingen en andere bestaande infrastructuur.
+                    De zuigmond wordt precies ingezet waar materiaal weg moet.
+                </p>
+
+                <div class="feature-detail">
+                    Kabels • leidingen • aansluitingen • tracés • putten
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DIENSTEN CARDS -->
+
+        <div class="cards">
+
+            <article class="card">
+
+                <div class="card-number">
+                    01 / INFRA
+                </div>
+
+                <h3>
+                    Kabels & leidingen vrijzuigen
+                </h3>
+
+                <p>
+                    Grond gecontroleerd verwijderen rondom bestaande
+                    kabels, leidingen en andere ondergrondse
+                    infrastructuur.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-number">
+                    02 / TRACÉS
+                </div>
+
+                <h3>
+                    Sleuven & tracés
+                </h3>
+
+                <p>
+                    Tracés, kruisingen en aansluitingen vrijmaken
+                    voor aanleg, onderhoud en vervanging van
+                    infrastructuur.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-number">
+                    03 / PUTTEN
+                </div>
+
+                <h3>
+                    Putten & aansluitingen
+                </h3>
+
+                <p>
+                    Materiaal verwijderen bij putten, aansluitingen
+                    en locaties waar traditioneel ontgraven lastig is.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-number">
+                    04 / BEREIK
+                </div>
+
+                <h3>
+                    Moeilijk bereikbare locaties
+                </h3>
+
+                <p>
+                    Materiaal verwijderen op locaties waar ruimte
+                    voor ander zwaar materieel beperkt is.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-number">
+                    05 / BOUW
+                </div>
+
+                <h3>
+                    Bouw & industrie
+                </h3>
+
+                <p>
+                    Zuigcapaciteit voor het verwijderen van grond
+                    en andere droge, losse materialen.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-number">
+                    06 / CAPACITEIT
+                </div>
+
+                <h3>
+                    Extra machine nodig?
+                </h3>
+
+                <p>
+                    Aanvullende capaciteit voor aannemers en
+                    collega-grondzuigbedrijven bij piekbelasting
+                    of projectwerk.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     VALUE
+========================================================= -->
+
+<section class="value">
+
+    <div class="container value-grid">
+
+        <div class="value-copy">
+
+            <div class="eyebrow">
+                Onze aanpak
+            </div>
+
+            <h2>
+                Veel vermogen.
+                <span>Volledige controle.</span>
+            </h2>
+
+            <p>
+                Zuigkracht gericht inzetten op de plek waar materiaal
+                weg moet. Rond kabels en leidingen, bij tracés en putten
+                of op locaties waar ander materieel beperkt uit de voeten kan.
+            </p>
+
+
+            <div class="value-list">
+
+                <div class="value-item">
+
+                    <div class="value-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Productie maken
+                        </h3>
+
+                        <p>
+                            Professionele zuiginstallaties voor het
+                            verwijderen van grote hoeveelheden grond
+                            en los materiaal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <div class="value-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Gericht vrijzuigen
+                        </h3>
+
+                        <p>
+                            Materiaal verwijderen rondom kabels,
+                            leidingen en bestaande infrastructuur.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="value-item">
+
+                    <div class="value-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Snel inzet bepalen
+                        </h3>
+
+                        <p>
+                            Project, locatie en werkzaamheden bespreken.
+                            Daarna bepalen we welke machine en capaciteit
+                            nodig zijn.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="quote-panel">
+
+            <blockquote>
+                “Zuigkracht waar gecontroleerd werken telt.”
+            </blockquote>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PARTNERS / AANNEMERS
+========================================================= -->
+
+<section id="partners">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Samenwerken
+            </div>
+
+            <h2>
+                Capaciteit wanneer het werk daarom vraagt.
+            </h2>
+
+        </div>
+
+
+        <!-- AANNEMERS MET BEELD -->
+
+        <div class="partner-main">
+
+            <div class="partner-main-image">
+
+                <img
+                    src="Bouwplaats met werkondernemer bij geul.png"
+                    alt="Uitvoerder bij kabel- en leidingwerk op de bouwplaats"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="partner-main-copy">
+
+                <div class="eyebrow">
+                    Voor aannemers
+                </div>
+
+                <h3>
+                    Kabels vrij. Klaar voor de volgende stap.
+                </h3>
+
+                <p>
+                    Tijdelijke of structurele grondzuigcapaciteit
+                    voor projecten in infra, bouw en industrie.
+                    We bepalen de inzet op basis van de werkzaamheden,
+                    locatie en planning.
+                </p>
+
+                <a href="#contact"
+                   class="link">
+                    Bespreek je project →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COLLEGA GRONDZUIGBEDRIJVEN -->
+
+        <div class="partner-grid">
+
+            <div class="partner-card">
+
+                <div class="eyebrow">
+                    Voor grondzuigbedrijven
+                </div>
+
+                <h3>
+                    Extra capaciteit nodig? Wij draaien mee.
+                </h3>
+
+                <p>
+                    Een machine tekort, piekbelasting of een groter
+                    project? Grondzuigtechniek Nederland kan als
+                    capaciteitspartner meedraaien.
+                </p>
+
+                <a href="#contact"
+                   class="link">
+                    Capaciteit bespreken →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROCESS
+========================================================= -->
+
+<section class="process"
+         id="werkwijze">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Werkwijze
+            </div>
+
+            <h2>
+                Van aanvraag naar inzet.
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Project bespreken
+                </h3>
+
+                <p>
+                    Waar, wanneer en wat moet worden vrijgemaakt?
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Inzet bepalen
+                </h3>
+
+                <p>
+                    We bekijken welke machine en capaciteit
+                    bij het werk passen.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Planning afstemmen
+                </h3>
+
+                <p>
+                    Locatie, werkzaamheden en inzet
+                    worden praktisch afgestemd.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <h3>
+                    Vrijzuigen
+                </h3>
+
+                <p>
+                    Grond en materiaal gericht verwijderen
+                    zodat de volgende stap kan worden gezet.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact"
+         id="contact">
+
+    <div class="contact-grid">
+
+        <div class="contact-main">
+
+            <div class="eyebrow">
+                Grondzuigcapaciteit nodig?
+            </div>
+
+            <h2>
+                Vertel wat er moet gebeuren.
+                <span>Dan bepalen we de inzet.</span>
+            </h2>
+
+            <p>
+                Een project, extra capaciteit of snel een machine
+                nodig? Neem direct contact op om de werkzaamheden,
+                locatie en planning te bespreken.
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a href="tel:+31636373933"
+                   class="btn btn-primary">
+                    Bel direct
+                </a>
+
+                <a href="mailto:info@grondopzuigen.nl"
+                   class="btn btn-outline">
+                    Stuur een e-mail
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-details">
+
+            <h3>
+                Grondzuigtechniek Nederland B.V.
+            </h3>
+
+
+            <div class="contact-row">
+
+                <small>
+                    Website
+                </small>
+
+                <strong>
+                    grondopzuigen.nl
+                </strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <small>
+                    E-mail
+                </small>
+
+                <strong>
+                    info@grondopzuigen.nl
+                </strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <small>
+                    Telefoon
+                </small>
+
+                <strong>
+                    06 36 37 39 33
+                </strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <small>
+                    Operationele basis
+                </small>
+
+                <strong>
+                    Regio Rotterdam
+                </strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <small>
+                    Werkgebied
+                </small>
+
+                <strong>
+                    Nederland
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <strong>
+                Grondzuigtechniek Nederland B.V.
+            </strong>
+
+            <br>
+
+            Kracht om ruimte te maken.
+
+        </div>
+
+
+        <div>
+            © <span id="year"></span> grondopzuigen.nl
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+    function toggleMenu() {
+
+        document
+            .getElementById("mainNav")
+            .classList
+            .toggle("active");
+
+    }
+
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
